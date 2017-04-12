@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Oleg Surkov](https://up.htmlacademy.ru/htmlcss/17/user/416395).
-* Наставник: `Ольга Одноколова`.
+* Наставник: [Ольга Одноколова](https://htmlacademy.ru/profile/id38936).
 
 ---
 
