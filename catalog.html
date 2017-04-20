@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+          <nav class="navigation">
+            <ul>
+              <li>
+                <a href="#">Информация</a>
+              </li>
+              <li>
+                <a href="#">Фото и видео</a>
+              </li>
+              <li>
+                <a href="#">Карта штата</a>
+              </li>
+              <li>
+                <a href="#">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+        <div class="top-logo">
+          <img src="#" alt="sedona logo" width="10" height="10">
+        </div>
+      </header>
+      <h1>Для SEO скрытый заголовок?</h1>
+      <div class="filters">
+        <form class="filters-form" action="#" method="get">
+          <div class="filters-infra">
+            <h2>Инфраструктура</h2>
+            <label>Бассейн
+              <input type="checkbox" name="pool">
+            </label>
+            <label>Парковка
+              <input type="checkbox" name="parking">
+            </label>
+            <label>Wi-Fi
+              <input type="checkbox" name="wifi">
+            </label>
+          </div>
+          <div class="filters-type">
+            <h2>Тип жилья</h2>
+            <label>Гостиница
+              <input type="checkbox" name="hotel">
+            </label>
+            <label>Мотель
+              <input type="checkbox" name="motel">
+            </label>
+            <label>Аппартаменты
+              <input type="checkbox" name="appart">
+            </label>
+          </div>
+          <div class="filters-price">
+            <h2>Стоимость в сутки (р)</h2>
+            <!-- Делать таблицей или блоками с фоном?-->
+            <table class="filters-price-limits">
+              <tr>
+                <td></td><td></td>
+              </tr>
+            </table>
+            <!-- непонятно как реализовывать слайдер -->
+            <input type="slider" class="price-slider">
+            <input type="submit" value="Показать">
+          </div>
+        </form>
+      </div>
+      <div class="search-results-block">
+        <div class="results-menu">
+          <h2>Найдено:</h2><span>3</span>
+          <ul>
+            <li><a>По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+          <img src="#" class="sort-asc" alt="По убыванию">
+          <img src="#" class="sort-desc" alt="По возрастанию">
+        </div>
+        <div class="search-results">
+          <article>
+            <img src="#" width="50" height="50" alt="Фото">
+            <section class="description">
+              <p class="result-name">AMARA RESORT amp; SPA
+                <span class="result-type">Гостиница</span>
+                <span class="result-price">От 3 500 руб.</span>
+              </p>
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </section>
+            <div class="result-rating">
+              <img class="rating-stars" src="#" width="30" height="10" alt="8.5">
+              <span class="rating-desc">Рейтинг: 8.5</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <footer class="main-footer">
+          <div class="footer-contacts">
+            <a href="#">#VISITSEDONA</a>
+          </div>
+          <div class="footer-social">
+            <a class="social-btn social-btn-vk" href="#">Twitter</a>
+            <a class="social-btn social-btn-fb" href="#">Facebook</a>
+            <a class="social-btn social-btn-inst" href="#">Youtube</a>
+          </div>
+          <div class="footer-copyright">
+            <p>Web-site by</p>
+            <a class="" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="#" alt="copiright-logo" width="10" height="10">
+            </a>
+          </div>
+      </footer>
+    </div>
+  </body>
+</html>
