@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона - аренда жилья</title>
   </head>
   <body>
     <div class="container">
@@ -24,10 +24,12 @@
             </ul>
           </nav>
         <div class="top-logo">
-          <img src="#" alt="sedona logo" width="10" height="10">
+          <a href="index.html">
+            <img src="#" alt="sedona logo" width="10" height="10">
+          </a>
         </div>
       </header>
-      <h1>Для SEO скрытый заголовок?</h1>
+      <!--<h1>Для SEO скрытый заголовок?</h1>-->
       <div class="filters">
         <form class="filters-form" action="#" method="get">
           <div class="filters-infra">
@@ -55,44 +57,71 @@
             </label>
           </div>
           <div class="filters-price">
-            <h2>Стоимость в сутки (р)</h2>
-            <!-- Делать таблицей или блоками с фоном?-->
-            <table class="filters-price-limits">
-              <tr>
-                <td></td><td></td>
-              </tr>
-            </table>
-            <!-- непонятно как реализовывать слайдер -->
-            <input type="slider" class="price-slider">
-            <input type="submit" value="Показать">
+            <p>Стоимость в сутки (р)</p>
+            <!-- Жду демки для фильтра цены -->
           </div>
         </form>
       </div>
       <div class="search-results-block">
         <div class="results-menu">
-          <h2>Найдено:</h2><span>3</span>
-          <ul>
-            <li><a>По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-          </ul>
-          <img src="#" class="sort-asc" alt="По убыванию">
-          <img src="#" class="sort-desc" alt="По возрастанию">
+          <div class="results-stats">Найдено:<span class="results-num">3</span></div>
+          <div class="sort-type">
+            <ul>
+              <li><a>По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
+          </div>
+          <div class="sort-direct">
+            <!--Считаю стрелки функциональными-->
+            <a href="#" class="sort-asc">По убыванию</a>
+            <a href="#" class="sort-desc active">По возрастанию</a>
+          </div>
         </div>
         <div class="search-results">
           <article>
             <img src="#" width="50" height="50" alt="Фото">
             <section class="description">
-              <p class="result-name">AMARA RESORT amp; SPA
+              <p class="result-name">AMARA RESORT &amp; SPA
                 <span class="result-type">Гостиница</span>
-                <span class="result-price">От 3 500 руб.</span>
+                <span class="result-price">От 4000 руб.</span>
               </p>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a href="#" class="detailes">Подробнее</a>
+              <a href="#" class="booking">Забронировать</a>
             </section>
             <div class="result-rating">
-              <img class="rating-stars" src="#" width="30" height="10" alt="8.5">
+              <img class="rating-stars" src="#" width="30" height="10" alt="5">
               <span class="rating-desc">Рейтинг: 8.5</span>
+            </div>
+          </article>
+          <article>
+            <img src="#" width="50" height="50" alt="Фото">
+            <section class="description">
+              <p class="result-name">DESERT QUAIL INN
+                <span class="result-type">Мотель</span>
+                <span class="result-price">От 3000 руб.</span>
+              </p>
+              <a href="#" class="detailes">Подробнее</a>
+              <a href="#" class="booking">Забронировать</a>
+            </section>
+            <div class="result-rating">
+              <img class="rating-stars" src="#" width="30" height="10" alt="4">
+              <span class="rating-desc">Рейтинг: 8.9</span>
+            </div>
+          </article>
+          <article>
+            <img src="#" width="50" height="50" alt="Фото">
+            <section class="description">
+              <p class="result-name">VILLAS AT POCO DIABLO
+                <span class="result-type">Аппартаменты</span>
+                <span class="result-price">От 2000 руб.</span>
+              </p>
+              <a href="#" class="detailes">Подробнее</a>
+              <a href="#" class="booking">Забронировать</a>
+            </section>
+            <div class="result-rating">
+              <img class="rating-stars" src="#" width="30" height="10" alt="3">
+              <span class="rating-desc">Рейтинг: 9.2</span>
             </div>
           </article>
         </div>
