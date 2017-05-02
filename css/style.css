@@ -6,6 +6,40 @@ body {
   color: #333333;
 }
 
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  min-height: 56px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.navigation li:nth-child(1),
+.navigation li:nth-child(2) {
+  width: 239px;
+  float: left;
+}
+
+.navigation li:nth-child(3),
+.navigation li:nth-child(4) {
+  width: 239px;
+  float: right;
+}
+
+.top-logo {
+  margin: 0 auto;
+}
+
 .main-title h1 {
   font-size: 21px;
   font-weight: bold;
