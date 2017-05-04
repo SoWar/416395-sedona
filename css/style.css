@@ -62,8 +62,84 @@ body {
   margin: 0 auto;
 }
 
+.main-logo {
+  /*width: 1200px;*/
+  /*исправить*/
+  height: 508px;
+}
+
+/*.main-logo .text {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.main-logo .bottom {
+  margin: 0 auto;
+  margin-bottom: 0;
+}*/
+
+.main-title {
+  padding-top: 47px;
+  padding-bottom: 54px;
+  background-color: rgba(50, 0, 0, 0.3);
+}
+
+
 .main-title h1 {
+  text-align: center;
+  text-transform: uppercase;
   font-size: 21px;
   font-weight: bold;
   color: black;
+}
+
+.main-title p {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features h2 {
+  margin: 0 auto;
+}
+
+/*переделать в отдельный класс*/
+.features-one,
+.features-two,
+.features-three,
+.features-foor,
+.features-five {
+  padding-top: 38px;
+  padding-left: 10px;
+}
+
+.features-one {
+  float: left;
+  width: 390px;
+  height: 200px;
+  background-color: rgba(0, 50, 0, 0.3);
+}
+
+.features-one-img {
+  float: right;
+  margin: 0;
+}
+
+.features-advices {
+  float: left;
+  width: 400px;
+  padding-top: 160px;
+  min-height: 170px;
+
+  text-align: center;
+  background-color: rgba(0, 0, 50, 0.3);
+}
+
+.features-two-img {
+  float: left;
+  margin: 0;
+}
+
+.features-two {
+  float: right;
 }
