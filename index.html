@@ -10,17 +10,17 @@
       <header class="main-header clearfix">
           <nav class="navigation">
             <ul>
-              <li>
+              <li class="left">
                 <a href="#">Информация</a>
               </li>
-              <li>
+              <li class="left">
                 <a href="#">Фото и видео</a>
               </li>
-              <li>
-                <a href="#">Карта штата</a>
-              </li>
-              <li>
+              <li class="right">
                 <a href="#">Гостиницы</a>
+              </li>
+              <li class="right">
+                <a href="#">Карта штата</a>
               </li>
             </ul>
           </nav>
@@ -28,7 +28,7 @@
       </header>
       <main>
         <div class="main-logo">
-          <!-- <img src="img/intro.jpg" class="background" alt="sedona logo" width="1200" height="773">  -->
+          <img src="img/intro.jpg" class="background" alt="sedona logo" width="1200" height="508">
           <img src="img/intro_text.png" class="text" alt="Welcom Sedona!" width="458" height="352">
           <img src="img/intro_bottom.png" class="bottom" alt="sedona bottom" width="1200" height="57">
         </div>
@@ -40,63 +40,71 @@
         </div>
         <div class="features">
           <div class="features-block1 clearfix">
-            <section class="features-one">
-              <h2>Настоящий городок</h2>
-              <p>
+            <section class="features-item">
+              <h2 class="title">Настоящий городок</h2>
+              <p class="num">— №1 —</p>
+              <p class="desc">
                 Седона - не аттракцион для туристов,  там течет своя жизнь
               </p>
             </section>
-            <figure class="features-one-img">
+            <figure class="features-img">
               <img src="img/feat2.jpg" width="800" height="256" alt="Своя жизнь">
             </figure>
           </div>
           <div class="features-block2 clearfix">
             <section class="features-advices">
-              <h2>Жилье</h2>
-              <p>
+              <img class="pictogram" src="img/appartments.png" width="75" height="72">
+              <h2 class="title">Жилье</h2>
+              <p class="desc">
                 Рекомендуем пожить в настоящем мотеле, все как в кино!
               </p>
             </section>
             <section class="features-advices">
-              <h2>Еда</h2>
-              <p>
+              <img class="pictogram" src="img/food.png" width="74" height="70">
+              <h2 class="title">Еда</h2>
+              <p class="desc">
                 Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
               </p>
             </section>
             <section class="features-advices">
-              <h2>Сувениры</h2>
-              <p>
+              <img class="pictogram" src="img/gifts.png" width="64" height="76">
+              <h2 class="title" >Сувениры</h2>
+              <p class="desc">
                 Не только китайского, но и местного производства!
               </p>
             </section>
           </div>
           <div class="features-block3 clearfix">
-            <figure class="features-two-img">
+            <figure class="features-img">
               <img src="img/feat4.jpg" width="800" height="256" alt="Своя жизнь">
             </figure>
-            <section class="features-two">
-              <h2>Там есть Мост Дьявола</h2>
-              <p>
+            <section class="features-item">
+              <h2 class="title">Там есть Мост Дьявола</h2>
+              <p class="num">— №2 —</p>
+              <p class="desc">
                 Да, по нему можно пройти! Если конечно Вы омелитесь
               </p>
             </section>
           </div>
-          <div class="features-block4">
-            <section class="features-three">
-              <h2>Небольшая площадь</h2>
-              <p>
+          <div class="features-block4 clearfix">
+            <section class="features-item">
+              <h2 class="title">Небольшая площадь</h2>
+              <p class="num">— №3 —</p>
+              <p class="desc">
                 Все достопримечательности находятся очень близко
               </p>
             </section>
-            <section class="features-foor">
-              <h2>Красивая дорога</h2>
-              <p>
+            <section class="features-item">
+              <h2 class="title">Красивая дорога</h2>
+              <p class="num">— №4 —</p>
+              <p class="desc">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </section>
-            <section class="features-five">
-              <h2>Мало туристов</h2>
-              <p>
+            <section class="features-item">
+              <h2 class="title">Мало туристов</h2>
+              <p class="num">— №5 —</p>
+              <p class="desc">
                 Большинство едет в Гранд Каньон и толпится там
               </p>
             </section>
@@ -105,8 +113,8 @@
         <div class="proposal">
           <em>Заинтересовались?</em>
           <p>
-            Укажите предполагаемые даты поездки, и мы покажем
-              вам лучшие предложения гостиниц В Седоне
+            <span class="lines">Укажите предполагаемые даты поездки</span>,
+            <span class="lines">и мы покажем вам лучшие предложения гостиниц В Седоне</span>
           </p>
           <input type="button" class="search-form-trigger" value="Поиск гостиницы в Седоне">
         </div>
@@ -114,6 +122,7 @@
           <form class="search-form" action="#" method="get">
             <label for="date_in">Дата заезда:</label>
             <input type="number" id="date_in" name="date_in">
+
             <label for="date_out">Дата выезда:</label>
             <input type="text" id="date_out" name="date_out">
 
@@ -132,17 +141,23 @@
           </form>
         </div>
         <div class="map-block">
-          <img src="img/map.png" alt="Sedona on the map" width="1200" height="593">
+          <img src="img/map.jpg" alt="Sedona on the map" width="1200" height="473">
         </div>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
           <div class="footer-contacts">
             <a href="#">#VISITSEDONA</a>
           </div>
           <div class="footer-social">
-            <a class="social-btn social-btn-vk" href="#">Twitter</a>
-            <a class="social-btn social-btn-fb" href="#">Facebook</a>
-            <a class="social-btn social-btn-inst" href="#">Youtube</a>
+            <a class="social-btn social-btn-vk" href="#">
+              <img src="img/twitter.png" width="46" height="48">
+            </a>
+            <a class="social-btn social-btn-fb" href="#">
+              <img src="img/fb.png" width="46" height="48">
+            </a>
+            <a class="social-btn social-btn-inst" href="#">
+              <img src="img/youtube.png" width="46" height="48">
+            </a>
           </div>
           <div class="footer-copyright">
             <p>Web-site by</p>

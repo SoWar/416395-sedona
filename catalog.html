@@ -3,31 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - аренда жилья</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
           <nav class="navigation">
             <ul>
-              <li>
+              <li class="left">
                 <a href="#">Информация</a>
               </li>
-              <li>
+              <li class="left">
                 <a href="#">Фото и видео</a>
               </li>
-              <li>
-                <a href="#">Карта штата</a>
-              </li>
-              <li>
+              <li class="right navigation-active">
                 <a href="#">Гостиницы</a>
+              </li>
+              <li class="right">
+                <a href="#">Карта штата</a>
               </li>
             </ul>
           </nav>
-        <div class="top-logo">
-          <a href="index.html">
-            <img src="img/logotop.png" alt="sedona logo" width="138" height="70">
-          </a>
-        </div>
+          <img class="top-logo" src="img/logotop.png" alt="sedona logo" width="138" height="70">
       </header>
       <!--<h1>Для SEO скрытый заголовок?</h1>-->
       <div class="filters">
@@ -44,7 +41,7 @@
               <input type="checkbox" name="wifi">
             </label>
           </div>
-          <div class="filters-type">
+          <div class="filters-type clearfix">
             <h2>Тип жилья</h2>
             <label>Гостиница
               <input type="checkbox" name="hotel">
@@ -57,35 +54,41 @@
             </label>
           </div>
           <div class="filters-price">
-            <p>Стоимость в сутки (р)</p>
+            <h2>Стоимость в сутки (р)</h2>
             <!-- Жду демки для фильтра цены -->
           </div>
         </form>
       </div>
       <div class="search-results-block">
-        <div class="results-menu">
+        <div class="results-menu clearfix">
           <div class="results-stats">Найдено:<span class="results-num">3</span></div>
           <div class="sort-type">
+            <p>СОРТИРОВКА:</p>
             <ul>
-              <li><a>По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По рейтингу</a></li>
+              <li><a class="active">ПО ЦЕНЕ</a></li>
+              <li><a href="#">ПО ТИПУ</a></li>
+              <li><a href="#">ПО РЕЙТИНГУ</a></li>
             </ul>
           </div>
           <div class="sort-direct">
             <!--Считаю стрелки функциональными-->
-            <a href="#" class="sort-asc">По убыванию</a>
-            <a href="#" class="sort-desc active">По возрастанию</a>
+            <a href="#" class="sort-asc">
+              <img src="img/sortasc.png" width="11" height="10" alt="По возрастанию">
+            </a>
+            <a href="#" class="sort-desc active">
+              <img src="img/sortdesc.png" width="11" height="10" alt="По убыванию">
+            </a>
           </div>
         </div>
         <div class="search-results">
-          <article>
-            <img src="img/amararesort.jpg" width="135" height="90" alt="Фото">
+          <article class="search-results-item clearfix">
+            <img class="photo" src="img/amararesort.jpg" width="135" height="90" alt="Фото">
             <section class="description">
-              <p class="result-name">AMARA RESORT &amp; SPA
+              <p class="result-name">AMARA RESORT &amp; SPA</p>
+              <div>
                 <span class="result-type">Гостиница</span>
                 <span class="result-price">От 4000 руб.</span>
-              </p>
+              </div>
               <a href="#" class="detailes">Подробнее</a>
               <a href="#" class="booking">Забронировать</a>
             </section>
@@ -94,13 +97,14 @@
               <span class="rating-desc">Рейтинг: 8.5</span>
             </div>
           </article>
-          <article>
-            <img src="img/desertquail.jpg" width="135" height="90" alt="Фото">
+          <article class="search-results-item clearfix">
+            <img class="photo" src="img/desertquail.jpg" width="135" height="90" alt="Фото">
             <section class="description">
-              <p class="result-name">DESERT QUAIL INN
+              <p class="result-name">DESERT QUAIL INN</p>
+              <div>
                 <span class="result-type">Мотель</span>
                 <span class="result-price">От 3000 руб.</span>
-              </p>
+              </div>
               <a href="#" class="detailes">Подробнее</a>
               <a href="#" class="booking">Забронировать</a>
             </section>
@@ -109,13 +113,14 @@
               <span class="rating-desc">Рейтинг: 8.9</span>
             </div>
           </article>
-          <article>
-            <img src="img/villas.jpg" width="135" height="90" alt="Фото">
+          <article class="search-results-item clearfix">
+            <img class="photo" src="img/villas.jpg" width="135" height="90" alt="Фото">
             <section class="description">
-              <p class="result-name">VILLAS AT POCO DIABLO
+              <p class="result-name">VILLAS AT POCO DIABLO</p>
+              <div>
                 <span class="result-type">Аппартаменты</span>
                 <span class="result-price">От 2000 руб.</span>
-              </p>
+              </div>
               <a href="#" class="detailes">Подробнее</a>
               <a href="#" class="booking">Забронировать</a>
             </section>
@@ -126,15 +131,20 @@
           </article>
         </div>
       </div>
-
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
           <div class="footer-contacts">
             <a href="#">#VISITSEDONA</a>
           </div>
           <div class="footer-social">
-            <a class="social-btn social-btn-vk" href="#">Twitter</a>
-            <a class="social-btn social-btn-fb" href="#">Facebook</a>
-            <a class="social-btn social-btn-inst" href="#">Youtube</a>
+            <a class="social-btn social-btn-vk" href="#">
+              <img src="img/twitter.png" width="46" height="48">
+            </a>
+            <a class="social-btn social-btn-fb" href="#">
+              <img src="img/fb.png" width="46" height="48">
+            </a>
+            <a class="social-btn social-btn-inst" href="#">
+              <img src="img/youtube.png" width="46" height="48">
+            </a>
           </div>
           <div class="footer-copyright">
             <p>Web-site by</p>
