@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", serif;
+  min-width: 1200px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
@@ -36,8 +37,9 @@ img {
 }
 
 .navigation li {
-  width: 167px;
-  list-style-type: none;
+  width: 168px;
+  /*list-style-type: none;*/
+  list-style: none;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -218,13 +220,13 @@ img {
 .proposal {
   min-height: 232px;
   padding-top: 59px;
-  padding-left: 377px;
-  padding-right: 377px;
   text-align: center;
-  /*background-color: green;*/
+  /*position: relative;*/
 }
 
 .proposal em {
+  display: inline-block;
+  vertical-align: top;
   font-size: 30px;
   font-weight: bold;
   font-style: normal;
@@ -233,17 +235,139 @@ img {
 
 .proposal .lines {
   display: inline-block;
+  margin: 0 200px;
+  vertical-align: top;
   line-height: 24px;
 }
 
 .proposal p {
-  margin-top: 25px;
+  margin-top: 28px;
 }
 
-.proposal .search-form-trigger {
-  display: block;
+/*Кнопки*/
+.search-form-trigger {
+  display: inline-block;
   width: 568px;
   height: 86px;
+  /*margin: 0 auto;*/
+  margin-top: 32px;
+  padding: 0;
+  /*position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -284px;*/
+  /*Загадки во тьме. Как она работает?*/
+  vertical-align: top;
+  text-align: center;
+
+  border: none;
+  cursor: pointer;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: white;
+  background-color: #766357;
+  text-transform: uppercase;
+}
+
+.search-form {
+  padding: 55px;
+  font-weight: bold;
+  background-color: white;
+  font-size: 0;
+}
+
+.search-form input {
+  display: inline-block;
+  vertical-align: top;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  border: 0;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  color: black;
+  background-color: #eee;
+  text-transform: uppercase;
+}
+
+.search-form label {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 111px;
+  padding-top: 9px;
+
+  font-size: 14px;
+}
+
+.search-form label[for="child_num"] {
+  width: 64px;
+  padding-left: 55px;
+}
+
+.search-form .date_in,
+.search-form .date_out {
+  /*position: relative;*/
+  width: 332px;
+  height: 36px;
+  padding-left: 13px;
+}
+
+.search-form::after {
+  /*content: "";*/
+  display: block;
+  /*position: absolute;*/
+  width: 10px;
+  height: 10px;
+  /*right: 10px;
+  top: 50%;
+  margin-top: -11px;*/
+
+  /*background: red url("../img/date_form.png");*/
+  background-color: red;
+  /*opacity: */
+}
+
+
+.search-form input[name="adult_less"],
+.search-form input[name="adult_more"],
+.search-form input[name="child_less"],
+.search-form input[name="child_more"] {
+  width: 38px;
+  height: 38px;
+  font-size: 21px;
+  text-align: center;
+}
+
+.search-form .adult_num,
+.search-form .child_num {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+}
+
+.search-form input.search-form-btn {
+  width: 458px;
+  height: 58px;
+  margin-top: 24px;
+  margin-bottom: 0;
+  border: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: white;
+  background-color: #81B3D2;
+  /*text-transform: uppercase;*/
 }
 
 .map-block {
@@ -268,17 +392,18 @@ img {
 
 .footer-social {
   float: left;
-  width: 276px;
+  /*width: 276px;*/
+  width: 397px;
   padding-top: 36px;
-  padding-left: 124px;
-  vertical-align: top;
+  padding-left: 3px;
+  /*Если убрать отступы, то не попадаем в макет, но это обязательное требование*/
+  text-align: center;
   font-size: 0px;
 }
 
 .footer-copyright {
   float: right;
   width: 400px;
-  vertical-align: top;
   font-size: 0px;
 }
 
@@ -293,6 +418,7 @@ img {
 .social-btn {
   display: inline-block;
   margin-right: 6px;
+  vertical-align: top;
 }
 
 .footer-copyright p {
@@ -307,6 +433,7 @@ img {
 
 .footer-copyright img {
   display: inline-block;
+  /*vertical-align: top;*/
   margin-left: 2px;
   margin-top: 41px;
 }
@@ -366,14 +493,16 @@ img {
   line-height: 18px;
   text-transform: none;
   color: black;
-  vertical-align: top;
+  /*vertical-align: top;*/
 }
 
 .sort-type ul {
   display: inline-block;
   margin: 0;
   padding-left: 0;
-  list-style-type: none;
+  /*list-style-type: none;*/
+  list-style: none;
+  vertical-align: top;
 }
 
 .sort-type p {
@@ -382,6 +511,7 @@ img {
   margin: 0;
   margin-right: 40px;
   font-size: 12px;
+  vertical-align: top;
 }
 
 .sort-type li {
@@ -389,6 +519,7 @@ img {
   display: inline-block;
   margin-right: 33px;
   font-size: 12px;
+  vertical-align: top;
 }
 
 .sort-type a {
@@ -409,13 +540,14 @@ img {
   margin-right: 73px;
   font-size: 0;
   text-align: right;
-  vertical-align: top;
+  /*vertical-align: top;*/
 }
 
 .sort-direct img {
   /*float: right;*/
   display: inline-block;
   margin-left: 12px;
+  vertical-align: top;
 }
 
 /*search results*/
