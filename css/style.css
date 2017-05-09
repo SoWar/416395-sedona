@@ -96,8 +96,8 @@ img {
 }
 
 .main-title {
-  min-height: 131px;
-  padding-top: 48px;
+  min-height: 132px;
+  padding-top: 47px;
   padding-bottom: 37px;
   /*vertical-align: top;*/
   /*background-color: rgba(50, 0, 0, 0.3);*/
@@ -121,8 +121,8 @@ img {
 
 .features-item {
   width: 400px;
-  min-height: 167px;
-  padding-top: 49px;
+  min-height: 168px;
+  padding-top: 48px;
   padding-bottom: 40px;
 }
 
@@ -138,13 +138,13 @@ img {
 
 .features-item .num {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 0;
   text-align: center;
 }
 
 .features-item .desc {
-  width: 290px;
+  width: 280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -192,21 +192,21 @@ img {
 .features-advices .pictogram {
   position: absolute;
   left: 163px;
-  top: 62px;
+  top: 61px;
 }
 
 .features-advices:first-child .pictogram {
   left: 162px;
-  top: 61px;
+  top: 60px;
 }
 
 .features-advices:last-child .pictogram {
   left: 168px;
-  top: 57px;
+  top: 56px;
 }
 
 .features-advices .title {
-  margin-top: 163px;
+  margin-top: 162px;
   font-size: 21px;
 }
 
@@ -230,6 +230,10 @@ img {
   float: right;
   color: #fff;
   background-color: #81b3d2;
+}
+
+.features-block3 p.desc {
+  width: 320px;
 }
 
 .features-block4 .features-item {
@@ -269,14 +273,8 @@ img {
   display: inline-block;
   width: 568px;
   height: 86px;
-  /*margin: 0 auto;*/
   margin-top: 32px;
   padding: 0;
-  /*position: absolute;
-  left: 50%;
-  bottom: 0;
-  margin-left: -284px;*/
-  /*Загадки во тьме. Как она работает?*/
   vertical-align: top;
   text-align: center;
 
@@ -341,27 +339,20 @@ img {
   background: #eee url("../img/date_form.png") no-repeat 317px center;
 }
 
-.search-form::after {
-  /*content: "";*/
+/*.search-form::after {
+  content: "";
   display: block;
-  /*position: absolute;*/
+  position: absolute;
   width: 10px;
   height: 10px;
-  /*right: 10px;
-  top: 50%;
-  margin-top: -11px;*/
-
-  /*background: red url("../img/date_form.png");*/
   background-color: red;
-  /*opacity: */
-}
+}*/
 
 .search-form input[name="adult_more"],
 .search-form input[name="child_more"] {
   width: 38px;
   height: 38px;
   font-size: 21px;
-  /*text-align: center;*/
   background: #eee url("../img/plus.png") no-repeat center;
 }
 
@@ -394,7 +385,6 @@ img {
   line-height: 26px;
   color: white;
   background-color: #81B3D2;
-  /*text-transform: uppercase;*/
 }
 
 .map-block {
@@ -419,11 +409,9 @@ img {
 
 .footer-social {
   float: left;
-  /*width: 276px;*/
   width: 397px;
   padding-top: 36px;
   padding-left: 3px;
-  /*Если убрать отступы, то не попадаем в макет, но это обязательное требование*/
   text-align: center;
   font-size: 0px;
 }
@@ -455,12 +443,11 @@ img {
   color: black;
   margin: 0;
   margin-left: 103px;
-  margin-top: 48px;
+  margin-top: 49px;
 }
 
 .footer-copyright img {
   display: inline-block;
-  /*vertical-align: top;*/
   margin-left: 2px;
   margin-top: 41px;
 }
@@ -468,7 +455,7 @@ img {
 
 /*CATALOG*/
 .filters {
-  min-height: 216px;
+  min-height: 217px;
   padding-left: 72px;
   color: white;
   background: #5080aa url("../img/filter_background2.jpg") no-repeat;
@@ -476,6 +463,7 @@ img {
 
 .filters-form h2 {
   margin: 0;
+  margin-bottom: 24px;
   font-size: 16px;
   font-weight: bold;
 }
@@ -488,11 +476,45 @@ img {
   margin-top: 28px;
 }
 
-.filters-price {
-  float: right;
-  width: 315px;
-  margin-right:73px;
-  margin-top: 28px;
+.filters-infra label,
+.filters-type label {
+  display: block;
+  margin-bottom: 25px;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.filters-infra label {
+  padding-left: 38px;
+}
+
+.filters-type label {
+  padding-left: 43px;
+}
+
+input[type="checkbox"] + label::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  background-image: url("../img/unchecked.png");
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  width: 26px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  background-image: url("../img/checked.png");
+}
+
+.filters-form input[type="checkbox"] {
+  display: none;
 }
 
 .results-stats {
@@ -500,7 +522,7 @@ img {
   width: 164px;
   min-height: 55px;
   margin-left: 71px;
-  padding-top: 32px;
+  padding-top: 31px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -514,7 +536,7 @@ img {
 
 .sort-type {
   float: left;
-  padding-top: 37px;
+  padding-top: 36px;
   width: 500px;
   font-size: 0;
   line-height: 18px;
@@ -563,7 +585,7 @@ img {
 .sort-direct {
   float: right;
   width: 200px;
-  padding-top: 40px;
+  padding-top: 39px;
   margin-right: 73px;
   font-size: 0;
   text-align: right;
@@ -630,7 +652,7 @@ img {
   display: inline-block;
   height: 23px;
   margin-top: 9px;
-  padding-top: 4px;
+  padding-top: 3px;
   font-size: 14px;
   text-decoration: none;
   text-align: center;
@@ -678,4 +700,140 @@ img {
   text-align: center;
   color: #666666;
   background-color: #eee;
+}
+
+/*MegaFilter*/
+.filter-range {
+  float: right;
+  width: 317px;
+  margin-right:72px;
+  margin-top: 28px;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 32px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 80px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 79%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
