@@ -7,7 +7,7 @@ body {
   font-weight: normal;
   line-height: 21px;
   color: #333333;
-  background-color: #eee;
+  background-color: #f2f2f2;
   text-transform: uppercase;
 }
 
@@ -25,6 +25,8 @@ img {
   width: 1200px;
   margin: 0 auto;
   background-color: white;
+  box-shadow: 5px 5px 20px -5px rgba(0,1,1,0.2),
+              -5px 5px 20px -5px rgba(0,1,1,0.2);
 }
 
 .main-header {
@@ -128,7 +130,7 @@ img {
 .features-item .title {
   margin: 0;
   margin-bottom: 23px;
-  padding: 0 120px;
+  padding: 0 122px;
   font-size: 21px;
   text-align: center;
 }
@@ -310,8 +312,6 @@ img {
   font-weight: bold;
   line-height: 26px;
   color: black;
-  /*Цвет в стайлгайде другой*/
-  /*background-color: #eee;*/
   background-color: #f2f2f2;
   text-transform: uppercase;
 }
@@ -353,7 +353,6 @@ img {
 .ico_calendar_in,
 .ico_calendar_out {
   position: absolute;
-  /*display: inline-block;*/
   right: 64px;
   content: "";
   width: 21px;
@@ -697,11 +696,11 @@ input[type="checkbox"]:checked + label::before {
 /*search results*/
 .search-results-item {
   min-height: 149px;
-  border-top: 1px solid #766357;
+  border-top: 1px solid #e5e5e5;
 }
 
 .search-results-item:last-child {
-  border-bottom: 1px solid #766357;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .search-results-item .photo {
