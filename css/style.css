@@ -39,10 +39,9 @@ img {
 
 .navigation li {
   width: 168px;
-  /*list-style-type: none;*/
   list-style: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  /*padding-bottom: 15px;*/
 }
 
 .navigation .left {
@@ -96,17 +95,15 @@ img {
 }
 
 .main-title {
-  min-height: 132px;
-  padding-top: 47px;
-  padding-bottom: 37px;
-  /*vertical-align: top;*/
-  /*background-color: rgba(50, 0, 0, 0.3);*/
+  min-height: 157px;
+  padding-top: 59px;
+  /*padding-bottom: 37px;*/
 }
 
 
 .main-title h1 {
+  margin: 0;
   text-align: center;
-  /*text-transform: uppercase;*/
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -114,24 +111,24 @@ img {
 }
 
 .main-title p {
-  margin-top: 29px;
+  margin: 0;
+  margin-top: 30px;
+  /*margin-bottom: 0;*/
   text-align: center;
   /*text-transform: uppercase;*/
 }
 
 .features-item {
   width: 400px;
-  min-height: 168px;
-  padding-top: 48px;
-  padding-bottom: 40px;
+  min-height: 209px;
+  padding-top: 47px;
+  /*padding-bottom: 41px;*/
 }
 
 .features-item .title {
   margin: 0;
   margin-bottom: 23px;
-  padding: 0;
-  padding-left: 125px;
-  padding-right: 125px;
+  padding: 0 120px;
   font-size: 21px;
   text-align: center;
 }
@@ -169,7 +166,7 @@ img {
 }
 
 .features-img img {
-  position: relative;
+  position: absolute;
   bottom: 0;
   top: 0;
   margin: 0 auto;
@@ -206,15 +203,16 @@ img {
 }
 
 .features-advices .title {
-  margin-top: 162px;
+  margin: 0;
+  margin-top: 161px;
   font-size: 21px;
 }
 
 .features-advices .desc {
   margin: 0;
   margin-top: 23px;
-  padding-left: 58px;
-  padding-right: 58px;
+  padding-left: 57px;
+  padding-right: 57px;
 }
 
 
@@ -242,8 +240,8 @@ img {
 }
 
 .proposal {
-  min-height: 232px;
-  padding-top: 59px;
+  min-height: 235px;
+  padding-top: 56px;
   text-align: center;
   /*position: relative;*/
 }
@@ -273,7 +271,7 @@ img {
   display: inline-block;
   width: 568px;
   height: 86px;
-  margin-top: 32px;
+  margin-top: 35px;
   padding: 0;
   vertical-align: top;
   text-align: center;
@@ -339,15 +337,6 @@ img {
   background: #eee url("../img/date_form.png") no-repeat 317px center;
 }
 
-/*.search-form::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: red;
-}*/
-
 .search-form input[name="adult_more"],
 .search-form input[name="child_more"] {
   width: 38px;
@@ -391,27 +380,37 @@ img {
   position: relative;
 }
 
+.footer-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: white;
+  opacity: 0.9;
+}
+
 .form-block {
   position: absolute;
-  left: 356px;
+  left: 50%;
+  top: 0;
   z-index: 100;
   width: 568px;
   height: 395px;
+  transform: translate(-50%,0);
 }
 
 .footer-contacts {
   float: left;
   width: 400px;
-  min-height: 73px;
-  padding-top: 47px;
+  min-height: 74px;
+  padding-top: 46px;
   text-align: center;
 }
 
 .footer-social {
   float: left;
-  width: 397px;
+  width: 396px;
   padding-top: 36px;
-  padding-left: 3px;
+  padding-left: 4px;
   text-align: center;
   font-size: 0px;
 }
@@ -448,7 +447,7 @@ img {
 
 .footer-copyright img {
   display: inline-block;
-  margin-left: 2px;
+  margin-left: 3px;
   margin-top: 41px;
 }
 
@@ -520,9 +519,9 @@ input[type="checkbox"]:checked + label::before {
 .results-stats {
   float: left;
   width: 164px;
-  min-height: 55px;
+  min-height: 56px;
   margin-left: 71px;
-  padding-top: 31px;
+  padding-top: 30px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -536,7 +535,7 @@ input[type="checkbox"]:checked + label::before {
 
 .sort-type {
   float: left;
-  padding-top: 36px;
+  padding-top: 35px;
   width: 500px;
   font-size: 0;
   line-height: 18px;
@@ -602,8 +601,6 @@ input[type="checkbox"]:checked + label::before {
 /*search results*/
 .search-results-item {
   min-height: 149px;
-  /*min-height: 89px;*/
-  /*padding: 30px 72px;*/
   border-top: 1px solid #766357;
 }
 
@@ -623,7 +620,7 @@ input[type="checkbox"]:checked + label::before {
   float: left;
   width: 400px;
   margin-left: 30px;
-  margin-top: 28px;
+  margin-top: 26px;
   font-size: 0;
   vertical-align: top;
 }
@@ -650,9 +647,9 @@ input[type="checkbox"]:checked + label::before {
 .search-results-item .detailes,
 .search-results-item .booking {
   display: inline-block;
-  height: 23px;
-  margin-top: 9px;
-  padding-top: 3px;
+  height: 25px;
+  margin-top: 10px;
+  padding-top: 2px;
   font-size: 14px;
   text-decoration: none;
   text-align: center;
@@ -692,9 +689,9 @@ input[type="checkbox"]:checked + label::before {
 .search-results-item .rating-desc {
   display: inline-block;
   width: 110px;
-  height: 24px;
+  height: 25px;
   margin-top: 37px;
-  padding-top: 3px;
+  padding-top: 2px;
   /*line-height: 28px;*/
   font-size: 14px;
   text-align: center;
