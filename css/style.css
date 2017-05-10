@@ -289,6 +289,7 @@ img {
 }
 
 .search-form {
+  position: relative;
   padding: 55px;
   font-weight: bold;
   background-color: white;
@@ -309,7 +310,9 @@ img {
   font-weight: bold;
   line-height: 26px;
   color: black;
-  background-color: #eee;
+  /*Цвет в стайлгайде другой*/
+  /*background-color: #eee;*/
+  background-color: #f2f2f2;
   text-transform: uppercase;
 }
 
@@ -328,13 +331,77 @@ img {
   padding-left: 55px;
 }
 
+/*надо доабавить псевдоэлемент для календаря*/
+/*.search-form label[for="date_in"]::after,
+.search-form label[for="date_out"]::after {
+  content: "";
+  position: absolute;
+  left: 482px;
+  width: 21px;
+  height: 22px;
+  background: url("../img/date_form.png") no-repeat center;
+}
+
+.search-form label[for="date_in"]::after {
+  top: 64px;
+}
+
+.search-form label[for="date_out"]::after {
+  top: 130px;
+}*/
+
+.ico_calendar_in,
+.ico_calendar_out {
+  position: absolute;
+  /*display: inline-block;*/
+  right: 64px;
+  content: "";
+  width: 21px;
+  height: 22px;
+  background: url("../img/date_form.png") no-repeat center;
+  cursor: pointer;
+}
+
+.ico_calendar_in {
+  top: 63px;
+}
+
+.ico_calendar_out {
+  top: 129px;
+}
+
+.ico_calendar_in:hover,
+.ico_calendar_out:hover {
+  background: url("../img/date_form_h.png") no-repeat center;
+}
+
+.ico_calendar_in:active,
+.ico_calendar_out:active {
+  background: url("../img/date_form_c.png") no-repeat center;
+}
+
 .search-form .date_in,
 .search-form .date_out {
-  /*position: relative;*/
   width: 332px;
   height: 36px;
+  /*Может и надо бордер. В новом макете надо смотреть. Как и цвета.0*/
+  /*border: 2px solid #000101;*/
   padding-left: 13px;
-  background: #eee url("../img/date_form.png") no-repeat 317px center;
+}
+
+.search-form .date_in:hover,
+.search-form .date_out:hover {
+  background-color: #ebebeb;
+}
+
+.search-form .date_in:focus,
+.search-form .date_out:focus {
+  width: 328px;
+  height: 32px;
+  padding-left: 11px;
+  background-color: #fff;
+  border: 2px solid #000101;
+  border-color: #e5e5e5;
 }
 
 .search-form input[name="adult_more"],
@@ -342,7 +409,7 @@ img {
   width: 38px;
   height: 38px;
   font-size: 21px;
-  background: #eee url("../img/plus.png") no-repeat center;
+  background: #f2f2f2 url("../img/plus.png") no-repeat center;
 }
 
 .search-form input[name="adult_less"],
@@ -350,7 +417,27 @@ img {
   width: 38px;
   height: 38px;
   font-size: 21px;
-  background: #eee url("../img/minus.png") no-repeat center;
+  background: #f2f2f2 url("../img/minus.png") no-repeat center;
+}
+
+.search-form input[name="adult_more"]:hover,
+.search-form input[name="child_more"]:hover {
+  background: #f2f2f2 url("../img/plus_h.png") no-repeat center;
+}
+
+.search-form input[name="adult_more"]:active,
+.search-form input[name="child_more"]:active {
+  background: #f2f2f2 url("../img/plus_c.png") no-repeat center;
+}
+
+.search-form input[name="adult_less"]:hover,
+.search-form input[name="child_less"]:hover {
+  background: #f2f2f2 url("../img/minus_h.png") no-repeat center;
+}
+
+.search-form input[name="adult_less"]:active,
+.search-form input[name="child_less"]:active {
+  background: #f2f2f2 url("../img/minus_c.png") no-repeat center;
 }
 
 .search-form .adult_num,
@@ -374,6 +461,15 @@ img {
   line-height: 26px;
   color: white;
   background-color: #81B3D2;
+}
+
+.search-form input.search-form-btn:hover {
+  background-color: #669ec0;
+}
+
+.search-form input.search-form-btn:active {
+  background-color: #5496bd;
+  color: rgba(255,255,255,0.3);
 }
 
 .map-block {
