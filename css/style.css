@@ -344,6 +344,50 @@ img {
   text-transform: uppercase;
 }
 
+.search-form button {
+  /*display: inline-block;*/
+  vertical-align: top;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  border: 0;
+  outline: 0;
+
+  color: black;
+  background-color: #f2f2f2;
+}
+
+.search-form .btn_less {
+  width: 38px;
+  height: 38px;
+  background: #f2f2f2 url("../img/minus.png") no-repeat center;
+}
+
+.search-form .btn_less:hover {
+  background: #f2f2f2 url("../img/minus_h.png") no-repeat center;
+}
+
+.search-form .btn_less:active {
+  background: #f2f2f2 url("../img/minus_c.png") no-repeat center;
+}
+
+.search-form .btn_more {
+  width: 38px;
+  height: 38px;
+  background: #f2f2f2 url("../img/plus.png") no-repeat center;
+}
+
+.search-form .btn_more:hover {
+  background: #f2f2f2 url("../img/plus_h.png") no-repeat center;
+}
+
+.search-form .btn_more:active {
+  background: #f2f2f2 url("../img/plus_c.png") no-repeat center;
+}
+
+
+
 .search-form label {
   display: inline-block;
   vertical-align: top;
@@ -431,7 +475,7 @@ img {
   border-color: #e5e5e5;
 }
 
-.search-form input[name="adult_more"],
+/*.search-form input[name="adult_more"],
 .search-form input[name="child_more"] {
   width: 38px;
   height: 38px;
@@ -445,9 +489,9 @@ img {
   height: 38px;
   font-size: 21px;
   background: #f2f2f2 url("../img/minus.png") no-repeat center;
-}
+}*/
 
-.search-form input[name="adult_more"]:hover,
+/*.search-form input[name="adult_more"]:hover,
 .search-form input[name="child_more"]:hover {
   background: #f2f2f2 url("../img/plus_h.png") no-repeat center;
 }
@@ -465,7 +509,7 @@ img {
 .search-form input[name="adult_less"]:active,
 .search-form input[name="child_less"]:active {
   background: #f2f2f2 url("../img/minus_c.png") no-repeat center;
-}
+}*/
 
 .search-form .adult_num,
 .search-form .child_num {
