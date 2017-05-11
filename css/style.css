@@ -29,8 +29,12 @@ img {
   width: 1200px;
   margin: 0 auto;
   background-color: white;
-  box-shadow: 5px 5px 20px -5px rgba(0,1,1,0.2),
-              -5px 5px 20px -5px rgba(0,1,1,0.2);
+
+  /*box-shadow: 5px 5px 20px -5px rgba(0,1,1,0.2),
+              -5px 5px 20px -5px rgba(0,1,1,0.2);*/
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+
+
 }
 
 .main-header {
@@ -560,7 +564,7 @@ img {
   display: inline-block;
   width: 46px;
   height: 48px;
-  background-color: #81b3d2;
+  /*background-color: #81b3d2;*/
 
   margin-right: 6px;
   vertical-align: top;
@@ -575,15 +579,15 @@ img {
 }
 
 .social-btn-tw {
-  background: url("../img/twitter.png") no-repeat center;
+  background: #81b3d2 url("../img/twitter.png") no-repeat center;
 }
 
 .social-btn-fb {
-  background: url("../img/fb.png") no-repeat center;
+  background: #81b3d2 url("../img/fb.png") no-repeat center;
 }
 
 .social-btn-yt {
-  background: url("../img/youtube.png") no-repeat center;
+  background: #81b3d2 url("../img/youtube.png") no-repeat center;
 }
 
 
