@@ -169,9 +169,14 @@ img {
 
 .features-img img {
   position: absolute;
-  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /*position: absolute;
   top: 0;
-  margin: 0 auto;
+  bottom: 0;
+  margin: auto 0;*/
 }
 
 .features-block2 {
@@ -248,7 +253,8 @@ img {
   /*position: relative;*/
 }
 
-.proposal em {
+.proposal .title {
+  margin: 0;
   display: inline-block;
   vertical-align: top;
   font-size: 30px;
@@ -264,7 +270,8 @@ img {
   line-height: 24px;
 }
 
-.proposal p {
+.proposal .text {
+  margin: 0;
   margin-top: 28px;
 }
 
@@ -273,7 +280,7 @@ img {
   display: inline-block;
   width: 568px;
   height: 86px;
-  margin-top: 35px;
+  margin-top: 49px;
   padding: 0;
   vertical-align: top;
   text-align: center;
@@ -491,6 +498,10 @@ img {
   width: 568px;
   height: 395px;
   transform: translate(-50%,0);
+  /*цвета и параметры проверить по макету*/
+  box-shadow: 5px 5px 20px -10px rgba(0,1,1,0.2),
+              -5px 5px 20px -10px rgba(0,1,1,0.2),
+              0px 5px 20px -10px rgba(0,1,1,0.2);
 }
 
 .footer-contacts {
