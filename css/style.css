@@ -1045,6 +1045,40 @@ input[type="checkbox"]:checked + label::before {
   background: #ffffff;
 }
 
+.proposal {
+  z-index: 100;
+}
+
+.form-block {
+  z-index: 1;
+}
+
+@keyframes form-slide-down {
+0% { transform: translate(-50%, -100%); }
+25% { transform: translate(-50%, -75%); }
+50% { transform: translate(-50%, -50%); }
+75% { transform: translate(-50%, -25%); }
+100% { transform: translate(-50%, 0); }
+}
+
+@keyframes form-slide-up {
+0% { transform: translate(-50%, 0); }
+25% { transform: translate(-50%, -25%); }
+50% { transform: translate(-50%, -50%); }
+75% { transform: translate(-50%, -75%); }
+100% { transform: translate(-50%, -100%); }
+}
+
+.slide-down {
+  animation-name: form-slide-down;
+  animation-duration: 0.3s;
+}
+
+.slide-up {
+  animation-name: form-slide-up;
+  animation-duration: 0.3s;
+}
+
 .display-toggle {
   display: none;
 }
