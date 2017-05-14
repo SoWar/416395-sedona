@@ -20,7 +20,7 @@
               <a href="#">Фото и видео</a>
             </li>
             <li class="right">
-              <a href="#">Гостиницы</a>
+              <a href="catalog.html">Гостиницы</a>
             </li>
             <li class="right">
               <a href="#">Карта штата</a>
@@ -35,7 +35,7 @@
           <img src="img/intro_bottom.png" class="bottom" alt="sedona bottom" width="1200" height="57">
         </div>
         <div class="main-title">
-          <h1>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
+          <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>
@@ -54,22 +54,19 @@
             </figure>
           </div>
           <div class="features-block2 clearfix">
-            <section class="features-advices">
-              <img class="pictogram" src="img/appartments.png" width="75" height="72" alt="">
+            <section class="features-advices pic_app">
               <h2 class="title">Жилье</h2>
               <p class="desc">
                 Рекомендуем пожить в настоящем мотеле, все как в кино!
               </p>
             </section>
-            <section class="features-advices">
-              <img class="pictogram" src="img/food.png" width="74" height="70" alt="">
+            <section class="features-advices pic_food">
               <h2 class="title">Еда</h2>
               <p class="desc">
                 Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
               </p>
             </section>
-            <section class="features-advices">
-              <img class="pictogram" src="img/gifts.png" width="64" height="76" alt="">
+            <section class="features-advices pic_gift">
               <h2 class="title" >Сувениры</h2>
               <p class="desc">
                 Не только китайского, но и местного производства!
@@ -115,11 +112,10 @@
         <div class="proposal">
           <p class="title">Заинтересовались?</p>
           <p class="text">
-            <span class="lines">Укажите предполагаемые даты поездки,</span>
-            <span class="lines">и мы покажем вам лучшие предложения гостиниц В Седоне</span>
+            Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц В Седоне
           </p>
-          <!-- <input type="button" class="search-form-trigger" value="Поиск гостиницы в Седоне"> -->
-          <button class="search-form-trigger">Поиск гостиницы в Седоне</button>
+          <button class="search-form-trigger" type="button">Поиск гостиницы в Седоне</button>
         </div>
         <div class="map-block">
           <img src="img/map_big.jpg" alt="Sedona on the map" width="1200" height="593">
@@ -127,25 +123,21 @@
             <form class="search-form" action="#" method="get">
               <label for="date_in">Дата заезда:</label>
               <input type="text" class="date_in" id="date_in" name="date_in" value="24 апреля 2017">
-              <div class="ico_calendar_in"></div>
+              <button class="ico_calendar_in" type="button"></button>
 
               <label for="date_out">Дата выезда:</label>
               <input type="text" class="date_out" id="date_out" name="date_out" value="4 июля 2017">
-              <div class="ico_calendar_out"></div>
+              <button class="ico_calendar_out" type="button"></button>
 
               <label for="adult_num">Взрослые:</label>
-              <!-- <input type="button" name="adult_less" value=""> -->
-              <button class="btn_less"></button>
+              <button class="btn_less" type="button"></button>
               <input type="text" class="adult_num" id="adult_num" value="2">
-              <button class="btn_more"></button>
-              <!-- <input type="button" name="adult_more" value=""> -->
+              <button class="btn_more" type="button"></button>
 
               <label for="child_num">Дети:</label>
-              <!-- <input type="button" name="child_less" value=""> -->
-              <button class="btn_less"></button>
+              <button class="btn_less" type="button"></button>
               <input type="text" class="child_num" id="child_num" value="0">
-              <button class="btn_more"></button>
-              <!-- <input type="button" name="child_more" value=""> -->
+              <button class="btn_more" type="button"></button>
 
               <input type="submit" class="search-form-btn" value="Найти">
             </form>

@@ -22,7 +22,7 @@ img {
 }
 
 .sprite {
-    background: url("../img/spritesheet.png") no-repeat center;
+  background: url("../img/spritesheet.png") no-repeat center;
 }
 
 .container {
@@ -46,7 +46,6 @@ img {
   width: 168px;
   list-style: none;
   padding-top: 13px;
-  /*padding-bottom: 15px;*/
 }
 
 .navigation .left {
@@ -108,14 +107,12 @@ img {
 }
 
 .main-title {
-  min-height: 157px;
-  padding-top: 59px;
-  /*padding-bottom: 37px;*/
+  min-height: 154px;
+  padding-top: 62px;
 }
 
-
 .main-title h1 {
-  margin: 0;
+  margin: 0 350px;
   text-align: center;
   font-size: 21px;
   line-height: 26px;
@@ -125,17 +122,15 @@ img {
 
 .main-title p {
   margin: 0;
-  margin-top: 30px;
-  /*margin-bottom: 0;*/
+  margin-top: 27px;
+  line-height: 26px;
   text-align: center;
-  /*text-transform: uppercase;*/
 }
 
 .features-item {
   width: 400px;
   min-height: 209px;
   padding-top: 47px;
-  /*padding-bottom: 41px;*/
 }
 
 .features-item .title {
@@ -183,11 +178,6 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -51%);
-
-  /*position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;*/
 }
 
 .features-block2 {
@@ -204,25 +194,39 @@ img {
   font-size: 14px;
 }
 
-.features-advices .pictogram {
+.pic_app::before {
+  content: "";
   position: absolute;
-  left: 163px;
-  top: 61px;
-}
-
-.features-advices:first-child .pictogram {
+  width: 75px;
+  height: 72px;
   left: 162px;
   top: 60px;
+  background: url("../img/appartments.png") no-repeat center;
 }
 
-.features-advices:last-child .pictogram {
+.pic_food::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 70px;
+  left: 163px;
+  top: 61px;
+  background: url("../img/food.png") no-repeat center;
+}
+
+.pic_gift::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 76px;
   left: 168px;
   top: 56px;
+  background: url("../img/gifts.png") no-repeat center;
 }
 
 .features-advices .title {
   margin: 0;
-  margin-top: 161px;
+  margin-top: 162px;
   font-size: 21px;
 }
 
@@ -232,7 +236,6 @@ img {
   padding-left: 57px;
   padding-right: 57px;
 }
-
 
 .features-block3 .features-img {
   position: relative;
@@ -259,9 +262,8 @@ img {
 
 .proposal {
   min-height: 235px;
-  padding-top: 56px;
+  padding-top: 48px;
   text-align: center;
-  /*position: relative;*/
 }
 
 .proposal .title {
@@ -271,19 +273,13 @@ img {
   font-size: 30px;
   font-weight: bold;
   font-style: normal;
-  line-height: 24px;
-}
-
-.proposal .lines {
-  display: inline-block;
-  margin: 0 200px;
-  vertical-align: top;
-  line-height: 24px;
+  line-height: 42px;
 }
 
 .proposal .text {
   margin: 0;
-  margin-top: 28px;
+  margin-top: 20px;
+  line-height: 24px;
 }
 
 /*Кнопки*/
@@ -291,15 +287,13 @@ img {
   display: inline-block;
   width: 568px;
   height: 86px;
-  margin-top: 49px;
+  margin-top: 47px;
   padding: 0;
   vertical-align: top;
   text-align: center;
-
   border: none;
   outline: 0;
   cursor: pointer;
-
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: bold;
@@ -329,12 +323,9 @@ img {
 .search-form input {
   display: inline-block;
   vertical-align: top;
-
   margin-top: 0;
   margin-bottom: 30px;
-
   border: 0;
-
   font-family: inherit;
   font-size: 14px;
   font-weight: bold;
@@ -344,16 +335,13 @@ img {
   text-transform: uppercase;
 }
 
-.search-form button {
-  /*display: inline-block;*/
+.search-form .btn_less,
+.search-form .btn_more {
   vertical-align: top;
-
   margin-top: 0;
   margin-bottom: 30px;
-
   border: 0;
   outline: 0;
-
   color: black;
   background-color: #f2f2f2;
 }
@@ -386,41 +374,19 @@ img {
   background: #f2f2f2 url("../img/plus_c.png") no-repeat center;
 }
 
-
-
 .search-form label {
   display: inline-block;
   vertical-align: top;
-
   width: 111px;
-  padding-top: 9px;
-
+  padding-top: 7px;
   font-size: 14px;
+  line-height: 26px;
 }
 
 .search-form label[for="child_num"] {
   width: 64px;
   padding-left: 55px;
 }
-
-/*надо доабавить псевдоэлемент для календаря*/
-/*.search-form label[for="date_in"]::after,
-.search-form label[for="date_out"]::after {
-  content: "";
-  position: absolute;
-  left: 482px;
-  width: 21px;
-  height: 22px;
-  background: url("../img/date_form.png") no-repeat center;
-}
-
-.search-form label[for="date_in"]::after {
-  top: 64px;
-}
-
-.search-form label[for="date_out"]::after {
-  top: 130px;
-}*/
 
 .ico_calendar_in,
 .ico_calendar_out {
@@ -429,6 +395,8 @@ img {
   content: "";
   width: 21px;
   height: 22px;
+  border: 0;
+  outline: 0;
   background: url("../img/date_form.png") no-repeat center;
   cursor: pointer;
 }
@@ -438,7 +406,7 @@ img {
 }
 
 .ico_calendar_out {
-  top: 129px;
+  top: 130px;
 }
 
 .ico_calendar_in:hover,
@@ -455,8 +423,6 @@ img {
 .search-form .date_out {
   width: 332px;
   height: 36px;
-  /*Может и надо бордер. В новом макете надо смотреть. Как и цвета.0*/
-  /*border: 2px solid #000101;*/
   padding-left: 13px;
 }
 
@@ -475,42 +441,6 @@ img {
   border-color: #e5e5e5;
 }
 
-/*.search-form input[name="adult_more"],
-.search-form input[name="child_more"] {
-  width: 38px;
-  height: 38px;
-  font-size: 21px;
-  background: #f2f2f2 url("../img/plus.png") no-repeat center;
-}
-
-.search-form input[name="adult_less"],
-.search-form input[name="child_less"] {
-  width: 38px;
-  height: 38px;
-  font-size: 21px;
-  background: #f2f2f2 url("../img/minus.png") no-repeat center;
-}*/
-
-/*.search-form input[name="adult_more"]:hover,
-.search-form input[name="child_more"]:hover {
-  background: #f2f2f2 url("../img/plus_h.png") no-repeat center;
-}
-
-.search-form input[name="adult_more"]:active,
-.search-form input[name="child_more"]:active {
-  background: #f2f2f2 url("../img/plus_c.png") no-repeat center;
-}
-
-.search-form input[name="adult_less"]:hover,
-.search-form input[name="child_less"]:hover {
-  background: #f2f2f2 url("../img/minus_h.png") no-repeat center;
-}
-
-.search-form input[name="adult_less"]:active,
-.search-form input[name="child_less"]:active {
-  background: #f2f2f2 url("../img/minus_c.png") no-repeat center;
-}*/
-
 .search-form .adult_num,
 .search-form .child_num {
   width: 36px;
@@ -525,7 +455,6 @@ img {
   margin-bottom: 0;
   border: none;
   cursor: pointer;
-
   font-family: inherit;
   font-size: 21px;
   font-weight: bold;
@@ -563,7 +492,6 @@ img {
   width: 568px;
   height: 395px;
   transform: translate(-50%,0);
-  /*цвета и параметры проверить по макету*/
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -602,8 +530,6 @@ img {
   display: inline-block;
   width: 46px;
   height: 48px;
-  /*background-color: #81b3d2;*/
-
   margin-right: 6px;
   vertical-align: top;
 }
@@ -628,28 +554,21 @@ img {
   background: #81b3d2 url("../img/youtube.png") no-repeat center;
 }
 
-
 .footer-copyright p {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
+  line-height: 26px;
   color: black;
   margin: 0;
   margin-left: 103px;
-  margin-top: 49px;
+  margin-top: 47px;
 }
-
-/*.footer-copyright img {
-  display: inline-block;
-  margin-left: 3px;
-  margin-top: 41px;
-}*/
 
 .copiright-logo {
   display: inline-block;
   margin-left: 3px;
   margin-top: 41px;
-
   width: 113px;
   height: 39px;
   background: url("../img/acadlogo.png") no-repeat center;
@@ -690,7 +609,6 @@ img {
 .filters-type label {
   display: block;
   margin-bottom: 25px;
-
   position: relative;
   cursor: pointer;
 }
@@ -752,20 +670,17 @@ input[type="checkbox"]:checked + label::before {
   line-height: 18px;
   text-transform: none;
   color: black;
-  /*vertical-align: top;*/
 }
 
 .sort-type ul {
   display: inline-block;
   margin: 0;
   padding-left: 0;
-  /*list-style-type: none;*/
   list-style: none;
   vertical-align: top;
 }
 
 .sort-type p {
-  /*float: left;*/
   display: inline-block;
   margin: 0;
   margin-right: 40px;
@@ -774,7 +689,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .sort-type li {
-  /*float: left;*/
   display: inline-block;
   margin-right: 33px;
   font-size: 12px;
@@ -799,11 +713,9 @@ input[type="checkbox"]:checked + label::before {
   margin-right: 73px;
   font-size: 0;
   text-align: right;
-  /*vertical-align: top;*/
 }
 
 .sort-direct img {
-  /*float: right;*/
   display: inline-block;
   margin-left: 12px;
   vertical-align: top;
@@ -839,14 +751,14 @@ input[type="checkbox"]:checked + label::before {
 .search-results-item .result-name {
   margin: 0;
   font-size: 21px;
-  /*line-height: 26px;*/
+  line-height: 26px;
   font-weight: bold;
 }
 
 .search-results-item .result-type,
 .search-results-item .result-price {
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 6px;
   font-size: 14px;
 }
 
@@ -858,9 +770,9 @@ input[type="checkbox"]:checked + label::before {
 .search-results-item .detailes,
 .search-results-item .booking {
   display: inline-block;
-  height: 25px;
-  margin-top: 10px;
-  padding-top: 2px;
+  height: 24px;
+  margin-top: 9px;
+  padding-top: 3px;
   font-size: 14px;
   text-decoration: none;
   text-align: center;
@@ -903,7 +815,6 @@ input[type="checkbox"]:checked + label::before {
   height: 25px;
   margin-top: 37px;
   padding-top: 2px;
-  /*line-height: 28px;*/
   font-size: 14px;
   text-align: center;
   color: #666666;
@@ -920,7 +831,6 @@ input[type="checkbox"]:checked + label::before {
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -928,12 +838,9 @@ input[type="checkbox"]:checked + label::before {
 
 .price-controls {
   position: relative;
-
   height: 32px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -943,22 +850,18 @@ input[type="checkbox"]:checked + label::before {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
-
   padding-top: 5px;
   font-size: 14px;
   line-height: 21px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -971,40 +874,33 @@ input[type="checkbox"]:checked + label::before {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1028,12 +924,10 @@ input[type="checkbox"]:checked + label::before {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
